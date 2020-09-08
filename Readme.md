@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [GGERMAN](https://up.htmlacademy.ru/htmlcss/29/user/1205835).
-* Наставник: `Неизвестно`.
+* Наставник: [Максим Кузнецов](https://htmlacademy.ru/profile/maxkuznetsov).
 
 ---
 
