@@ -242,6 +242,8 @@ img {
   text-transform: uppercase;
   background-color: var(--basic-crimson);
   border-radius: 3px;
+  width: 240px;
+  height: 50px;
 }
 
 .button:link {
@@ -252,6 +254,8 @@ img {
   text-transform: uppercase;
   background-color: var(--basic-crimson);
   border-radius: 3px;
+  width: 240px;
+  height: 50px;
 }
 
 .button:hover {
@@ -262,6 +266,8 @@ img {
   text-transform: uppercase;
   background-color: var(--basic-сarmine-pink);
   border-radius: 3px;
+  width: 240px;
+  height: 50px;
 }
 
 .button:active {
@@ -273,6 +279,8 @@ img {
   background-color: var(--basic-strawberry-red);
   border-radius: 3px;
   opacity: 0.3;
+  width: 240px;
+  height: 50px;
 }
 
 .button-contacts {
@@ -283,6 +291,8 @@ img {
   text-transform: uppercase;
   background-color: var(--basic-crimson);
   border-radius: 3px;
+  width: 219px;
+  height: 50px;
 }
 
 .slider-button {
@@ -298,6 +308,8 @@ img {
   text-transform: uppercase;
   background-color: var(--basic-crimson);
   border-radius: 3px;
+  width: 160px;
+  height: 50px;
 }
 
 .buy-one:link {
@@ -307,6 +319,8 @@ img {
   vertical-align: middle;
   text-transform: uppercase;
   border-radius: 3px;
+  width: 160px;
+  height: 50px;
 }
 
 .buy-one:hover {
@@ -316,6 +330,8 @@ img {
   vertical-align: middle;
   text-transform: uppercase;
   border-radius: 3px;
+  width: 160px;
+  height: 50px;
 }
 
 .buy-one:active {
@@ -326,6 +342,8 @@ img {
   vertical-align: middle;
   text-transform: uppercase;
   border-radius: 3px;
+  width: 160px;
+  height: 50px;
 }
 
 .buy-two {
@@ -337,6 +355,8 @@ img {
   text-transform: uppercase;
   background-color: var(--basic-green);
   border-radius: 3px;
+  width: 160px;
+  height: 50px;
 }
 
 .buy-two:link {
@@ -346,6 +366,8 @@ img {
   vertical-align: middle;
   text-transform: uppercase;
   border-radius: 3px;
+  width: 160px;
+  height: 50px;
 }
 
 .buy-two:hover {
@@ -355,6 +377,8 @@ img {
   vertical-align: middle;
   text-transform: uppercase;
   border-radius: 3px;
+  width: 160px;
+  height: 50px;
 }
 
 .buy-two:active {
@@ -365,6 +389,8 @@ img {
   vertical-align: middle;
   text-transform: uppercase;
   border-radius: 3px;
+  width: 160px;
+  height: 50px;
 }
 
 .buy-three {
@@ -375,6 +401,8 @@ img {
   text-transform: uppercase;
   background-color: var(--basic-yellow);
   border-radius: 3px;
+  width: 160px;
+  height: 50px;
 }
 
 .buy-three:link {
@@ -384,6 +412,8 @@ img {
   vertical-align: middle;
   text-transform: uppercase;
   border-radius: 3px;
+  width: 160px;
+  height: 50px;
 }
 
 .buy-three:hover {
@@ -393,6 +423,8 @@ img {
   vertical-align: middle;
   text-transform: uppercase;
   border-radius: 3px;
+  width: 160px;
+  height: 50px;
 }
 
 .buy-three:active {
@@ -403,6 +435,8 @@ img {
   vertical-align: middle;
   text-transform: uppercase;
   border-radius: 3px;
+  width: 160px;
+  height: 50px;
 }
 
 /* Index-work */
@@ -723,3 +757,82 @@ img {
 
 /* Catalog */
 
+/* Header-catalog*/
+
+.store h1{
+  font-size: 55px;
+  line-height: 55px;
+  background-color: var(--basic-smoky-white);
+  color: var(--basic-black);
+}
+
+/* Main-catalog */
+
+.filters{
+  color: var(--basic-black);
+  background-color: var(--basic-light-grey);
+  background-image: url("#");
+  background-position: center, 0 0;
+  background-repeat: no-repeat, repeat;
+}
+
+.parameters legend,
+.filter-sort h3{
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: var(--basic-light-grey);
+  color: var(--basic-black);
+}
+
+.parameters-list {
+  list-style: none;
+}
+
+.parameters-item {
+  text-align: left;
+  background-color: var(--basic-light-grey);
+  color: var(--basic-anthracite-grey);
+}
+
+/* catalog-button */
+
+.button-show {
+  font: inherit;
+  text-align: center;
+  color: var(--basic-black);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--basic-smoky-white);
+  border-radius: 3px;
+  width: 260px;
+  height: 50px;
+  padding-top: 15px;
+  padding-bottom: 17px;
+  padding-left: 88px;
+  padding-right: 89px;
+  box-sizing: border-box;
+  margin-left: 25px;
+  display: block;
+}
+
+.button-price{
+  font: inherit;
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--basic-crimson);
+  border-radius: 3px;
+  width: 200px;
+  height: 50px;
+  box-sizing: border-box;
+  padding-top: 15px;
+  padding-bottom: 17px;
+  padding-left: 72px;
+  padding-right: 72px;
+  box-sizing: border-box;
+  margin-left: 25px;
+  display: block;
+}
