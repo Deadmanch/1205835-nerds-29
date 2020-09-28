@@ -139,19 +139,21 @@
         <h4 class="visually-hidden">Фильтор подбора</h4>
         <h3>Сортировать:</h3>
         <ul class="sort-list">
-          <li>По цене</li>
-          <li>По типу</li>
-          <li>По названию</li>
-          <li><a href="#">вверх</a></li>
+          <li><a class="active" href="#">По цене</a></li>
+          <li><a href="#">По типу</a></li>
+          <li><a href="#">По названию</a></li>
+        </ul>
+        <ul class="sort-list">
+          <li><a class="active" href="#">вверх</a></li>
           <li><a href="#">вниз</a></li>
         </ul>
       </section>
-      <article>
-        <h4 class="visually-hidden">Карточка сайта Sedona</h4>
-        <div>
-          <button>one</button>
-          <button>two</button>
-          <button>three</button>
+      <article class="site-card">
+        <h4 class="visually-hidden">Информационный сайт для туристов</h4>
+        <div class="site-card-buttons">
+          <button type="button">one</button>
+          <button type="button">two</button>
+          <button type="button">three</button>
         </div>
         <a href="product.html">
           <img
@@ -161,17 +163,17 @@
             alt="принт-скрин сайта Sedona"
           />
         </a>
-        <div>
-          <a href="#">
-            <div>Sedona</div>
-          </a>
+        <div class="card-price-block">
+          <a class="name-cite" href="#">Sedona</a>
           <p>Информационный сайт для туристов</p>
           <a class="button-price" type="button" href="#">9 900 ₽</a>
         </div>
       </article>
-      <article>
-        <h4 class="visually-hidden">Карточка сайта Pink</h4>
-        <div>
+      <article class="site-card">
+        <h4 class="visually-hidden">
+          Продуктовый лендинг приложения для IOS и Andrioid
+        </h4>
+        <div class="site-card-buttons">
           <button>one</button>
           <button>two</button>
           <button>three</button>
@@ -184,15 +186,15 @@
             alt="принт-скрин сайта Pink app"
           />
         </a>
-        <div>
-          <a href="#">Pink app</a>
+        <div class="card-price-block">
+          <a class="name-cite" href="#">Pink app</a>
           <p>Продуктовый лендинг приложения для IOS и Andrioid</p>
           <a class="button-price" type="button" href="#">9 900 ₽</a>
         </div>
       </article>
-      <article>
-        <h4 class="visually-hidden">Карточка сайта Барбершоп Бородинский</h4>
-        <div>
+      <article class="site-card">
+        <h4 class="visually-hidden">Сайт салона красоты для мужчин</h4>
+        <div class="site-card-buttons">
           <button>one</button>
           <button>two</button>
           <button>three</button>
@@ -205,15 +207,15 @@
             alt="принт-скрин сайта Barbershop Borodinsky"
           />
         </a>
-        <div>
-          <a href="#">Barbershop</a>
+        <div class="card-price-block">
+          <a class="name-cite" href="#">Barbershop</a>
           <p>Сайт салона красоты. Для мужчин, да.</p>
           <a class="button-price" type="button" href="#">9 900 ₽</a>
         </div>
       </article>
-      <article>
-        <h4 class="visually-hidden">Карточка сайта Mishka</h4>
-        <div>
+      <article class="site-card">
+        <h4 class="visually-hidden">Интернет магазин вязаных игрушек</h4>
+        <div class="site-card-buttons">
           <button>one</button>
           <button>two</button>
           <button>three</button>
@@ -226,15 +228,15 @@
             alt="принт-скрин сайта Mishka"
           />
         </a>
-        <div>
-          <a href="#">Mishka</a>
+        <div class="card-price-block">
+          <a class="name-cite" href="#">Mishka</a>
           <p>Интернет-магазин вязаных игрушек</p>
           <a class="button-price" type="button" href="#">9 900 ₽</a>
         </div>
       </article>
-      <article>
-        <h4 class="visually-hidden">Карточка сайта a plus</h4>
-        <div>
+      <article class="site-card">
+        <h4 class="visually-hidden">Лендиинг курсов повышения квалификации</h4>
+        <div class="site-card-buttons">
           <button>one</button>
           <button>two</button>
           <button>three</button>
@@ -247,15 +249,15 @@
             alt="принт-скрин сайта a plus"
           />
         </a>
-        <div>
-          <a href="#">a plus</a>
+        <div class="card-price-block">
+          <a class="name-cite" href="#">a plus</a>
           <p>Лендиинг курсов повышения квалификации</p>
           <a class="button-price" type="button" href="#">9 900 ₽</a>
         </div>
       </article>
-      <article>
-        <h4 class="visually-hidden">Карточка сайта кваст</h4>
-        <div>
+      <article class="site-card">
+        <h4 class="visually-hidden">Промо-сайт производителя крафтого кваса</h4>
+        <div class="site-card-buttons">
           <button>one</button>
           <button>two</button>
           <button>three</button>
@@ -268,8 +270,8 @@
             alt="принт-скрин сайта кваст"
           />
         </a>
-        <div>
-          <a href="#">кваст</a>
+        <div class="card-price-block">
+          <a class="name-cite" href="#">кваст</a>
           <p>Промо-сайт производителя крафтого кваса</p>
           <a class="button-price" type="button" href="#">9 900 ₽</a>
         </div>
@@ -321,30 +323,21 @@
         </figure>
       </div>
       <section class="footer-socials">
-        <h4>Социальные сети.</h4>
+        <h4 class="visually-hidden">Социальные сети.</h4>
         <ul>
           <li>
-            <a class="socials-button" href="#">
+            <a class="social-button" href="#">
               <span class="visually-hidden">Вконтакте</span>
-              <svg width="#" height="#" viewBox="#">
-                <path d="#" fill="#" />
-              </svg>
             </a>
           </li>
           <li>
-            <a class="socials-button" href="#">
+            <a class="social-button" href="#">
               <span class="visually-hidden">Фейсбук</span>
-              <svg width="#" height="#" viewBox="#">
-                <path d="#" fill="#" />
-              </svg>
             </a>
           </li>
           <li>
-            <a class="socials-button" href="#">
+            <a class="social-button" href="#">
               <span class="visually-hidden">Инстаграм</span>
-              <svg width="#" height="#" viewBox="#">
-                <path d="#" fill="#" />
-              </svg>
             </a>
           </li>
         </ul>
@@ -363,13 +356,8 @@
         method="post"
       >
         <p>
-          <label for="First-Name-Last-Name"> Ваше имя: </label>
-          <input
-            type="text"
-            name="name"
-            id="First-Name-Last-Name"
-            placeholder="Имя Фамилия"
-          />
+          <label for="name"> Ваше имя: </label>
+          <input type="text" name="name" id="name" placeholder="Имя Фамилия" />
         </p>
         <p>
           <label for="mail"> Ваш email:</label>
@@ -381,14 +369,14 @@
           />
         </p>
         <p>
-          <label for="message-field">Текст письма:</label>
+          <label for="message">Текст письма:</label>
           <textarea name="message" id="message-field" rows="10">
 В свободной форме</textarea
           >
         </p>
         <button class="button" type="submit">Отправить</button>
       </form>
-      <button class="modal-button-close" type="button">Закрыть</button>
+      <button class="modal-button-close" type="button"></button>
     </section>
     <p class="visually-hidden">
       Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a
