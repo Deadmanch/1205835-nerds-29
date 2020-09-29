@@ -216,6 +216,8 @@ img {
 .slide-one {
   background-color: var(--basic-dark);
   border: none;
+  width: 760px;
+  height: 431px;
 }
 
 .slide-two {
@@ -246,10 +248,9 @@ img {
   background-color: var(--basic-crimson);
   border-radius: 3px;
   width: 240px;
-  height: 50px;
   box-sizing: border-box;
-  padding-top: 15px;
-  padding-bottom: 17px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   padding-left: 54px;
   padding-right: 54px;
   margin-left: 25px;
@@ -264,7 +265,6 @@ img {
   background-color: var(--basic-crimson);
   border-radius: 3px;
   width: 240px;
-  height: 50px;
 }
 
 .button:hover {
@@ -276,7 +276,6 @@ img {
   background-color: var(--basic-сarmine-pink);
   border-radius: 3px;
   width: 240px;
-  height: 50px;
 }
 
 .button:active {
@@ -289,7 +288,6 @@ img {
   border-radius: 3px;
   opacity: 0.3;
   width: 240px;
-  height: 50px;
 }
 
 .button-contacts {
@@ -300,8 +298,13 @@ img {
   text-transform: uppercase;
   background-color: var(--basic-crimson);
   border-radius: 3px;
+  border: none;
   width: 219px;
-  height: 50px;
+  padding-top: 17px;
+  padding-bottom: 15px;
+  padding-left: 44px;
+  padding-right: 44px;
+  margin-left: 25px;
 }
 
 .slider-button {
@@ -322,11 +325,10 @@ img {
   background-color: var(--basic-crimson);
   border-radius: 3px;
   width: 160px;
-  height: 50px;
   display: block;
   box-sizing: border-box;
-  padding-top: 15px;
-  padding-bottom: 17px;
+  padding-top: 17px;
+  padding-bottom: 15px;
   padding-left: 39px;
   padding-right: 40px;
   margin-left: 25px;
@@ -340,7 +342,6 @@ img {
   text-transform: uppercase;
   border-radius: 3px;
   width: 160px;
-  height: 50px;
 }
 
 .buy-one:hover {
@@ -351,7 +352,6 @@ img {
   text-transform: uppercase;
   border-radius: 3px;
   width: 160px;
-  height: 50px;
 }
 
 .buy-one:active {
@@ -363,7 +363,6 @@ img {
   text-transform: uppercase;
   border-radius: 3px;
   width: 160px;
-  height: 50px;
 }
 
 .buy-two {
@@ -376,11 +375,10 @@ img {
   background-color: var(--basic-green);
   border-radius: 3px;
   width: 160px;
-  height: 50px;
   display: block;
   box-sizing: border-box;
-  padding-top: 15px;
-  padding-bottom: 17px;
+  padding-top: 17px;
+  padding-bottom: 15px;
   padding-left: 39px;
   padding-right: 40px;
   margin-left: 25px;
@@ -394,7 +392,6 @@ img {
   text-transform: uppercase;
   border-radius: 3px;
   width: 160px;
-  height: 50px;
 }
 
 .buy-two:hover {
@@ -405,7 +402,6 @@ img {
   text-transform: uppercase;
   border-radius: 3px;
   width: 160px;
-  height: 50px;
 }
 
 .buy-two:active {
@@ -417,7 +413,6 @@ img {
   text-transform: uppercase;
   border-radius: 3px;
   width: 160px;
-  height: 50px;
 }
 
 .buy-three {
@@ -429,11 +424,10 @@ img {
   background-color: var(--basic-yellow);
   border-radius: 3px;
   width: 160px;
-  height: 50px;
   display: block;
   box-sizing: border-box;
-  padding-top: 15px;
-  padding-bottom: 17px;
+  padding-top: 17px;
+  padding-bottom: 15px;
   padding-left: 39px;
   padding-right: 40px;
   margin-left: 25px;
@@ -447,7 +441,6 @@ img {
   text-transform: uppercase;
   border-radius: 3px;
   width: 160px;
-  height: 50px;
 }
 
 .buy-three:hover {
@@ -458,7 +451,6 @@ img {
   text-transform: uppercase;
   border-radius: 3px;
   width: 160px;
-  height: 50px;
 }
 
 .buy-three:active {
@@ -470,7 +462,24 @@ img {
   text-transform: uppercase;
   border-radius: 3px;
   width: 160px;
-  height: 50px;
+}
+
+.button-modal {
+  font: inherit;
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--basic-crimson);
+  border-radius: 3px;
+  width: 240px;
+  box-sizing: border-box;
+  padding-top: 17px;
+  padding-bottom: 15px;
+  padding-left: 83px;
+  padding-right: 83px;
+  margin-left: 25px;
+  border: none;
 }
 
 /* Index-work */
@@ -677,7 +686,7 @@ img {
 .social-button {
   list-style: none;
   width: 81px;
-  height: 81px;
+  min-height: 81px;
   border-radius: 50%;
   background-color: var(--basic-gainsborough-light);
   display: block;
@@ -720,7 +729,7 @@ img {
 
 /* Login form */
 
-.login-form input[type="names"],
+.login-form input[type="name"],
 .login-form input[type="email"] {
   font: inherit;
   color: var(--basic-gainsborough);
@@ -729,28 +738,32 @@ img {
   border-radius: 3px;
 }
 
-.login-form input[type="names"]:link {
+.login-form input[type="name"]:link {
+  font: inherit;
   color: var(--basic-gainsborough);
   border: 2px solid var(--basic-gainsborough);
   background-color: transparent;
   border-radius: 3px;
 }
 
-.login-form input[type="names"]:hover {
+.login-form input[type="name"]:hover {
+  font: inherit;
   color: var(--basic-light-grey);
   border: 2px solid var(--basic-light-grey);
   background-color: transparent;
   border-radius: 3px;
 }
 
-.login-form input[type="names"]:focus {
+.login-form input[type="name"]:focus {
+  font: inherit;
   color: var(--basic-dark-bluish-black);
   border: 2px solid var(--basic-black);
   background-color: transparent;
   border-radius: 3px;
 }
 
-.login-form input[type="names"]:invalid {
+.login-form input[type="name"]:invalid {
+  font: inherit;
   color: var(--basic-сarmine-pink);
   border: 2px solid var(--basic-сarmine-pink);
   background-color: transparent;
@@ -776,6 +789,7 @@ img {
   width: 32px;
   height: 32px;
   opacity: 0.3;
+  font-size: 0;
 }
 .modal-button-close:hover {
   opacity: 1;
@@ -873,9 +887,8 @@ fieldset {
   background-color: var(--basic-smoky-white);
   border-radius: 3px;
   width: 260px;
-  height: 50px;
-  padding-top: 15px;
-  padding-bottom: 17px;
+  padding-top: 17px;
+  padding-bottom: 15px;
   padding-left: 88px;
   padding-right: 89px;
   box-sizing: border-box;
@@ -901,10 +914,9 @@ fieldset {
   background-color: var(--basic-crimson);
   border-radius: 3px;
   width: 200px;
-  height: 50px;
   box-sizing: border-box;
-  padding-top: 15px;
-  padding-bottom: 17px;
+  padding-top: 17px;
+  padding-bottom: 15px;
   padding-left: 72px;
   padding-right: 72px;
   margin-left: 25px;
