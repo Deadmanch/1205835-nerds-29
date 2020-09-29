@@ -27,9 +27,7 @@
             <ul class="site-navigation">
               <li><a class="restore" href="#">Студия</a></li>
               <li><a class="restore" href="#">Клиенты</a></li>
-              <li>
-                <a class="restore" href="catalog.html">Магазин</a>
-              </li>
+              <li><a class="restore" href="catalog.html">Магазин</a></li>
               <li><a class="restore" href="#">Контакты</a></li>
             </ul>
             <div class="cart-navigation">
@@ -64,7 +62,7 @@
             Работать днем,как все? Мы против этого. Ближе к полуночи работа
             только начинается.
           </p>
-          <a class="button" type="button">Узнать больше</a>
+          <a class="button" type="button" href="#">Узнать больше</a>
         </section>
 
         <section class="slider">
@@ -73,10 +71,10 @@
             <li class="slide-one">
               <a href="#">
                 <img
-                  src="https://via.placeholder.com/150x100"
+                  src="/img/nerds-index-slide-one.jpg"
                   width="760"
                   height="431"
-                  alt="#"
+                  alt="картика телефонов"
                 />
               </a>
             </li>
@@ -121,7 +119,7 @@
                     src="https://via.placeholder.com/150x100"
                     width="300"
                     height="146"
-                    alt="картинка ноута"
+                    alt="картинка ноутбука"
                   />
                 </a>
               </figure>
@@ -229,73 +227,60 @@
 
     <footer class="page-footer main-footer">
       <h4 class="visually-hidden">Контакты</h4>
-      <section class="footer-map">
-        <figure class="gallery-footer-map">
+
+      <figure class="gallery-footer-map">
+        <a href="#">
+          <img
+            src="https://via.placeholder.com/150x100"
+            width="1440"
+            height="416"
+            alt="карта"
+          />
+        </a>
+      </figure>
+      <div class="footer-container">
+        <div>nёrds design studio</div>
+        <p>191186, Cанкт-Петербург, ул. Б. Конюшенная д. 19/8</p>
+        <p>
+          <a class="contacts-text" href="tel+7(812)275-75-75"
+            >тел.+7(812) 275-75-75</a
+          >
+        </p>
+        <button class="button-contacts" type="button">Напишите нам</button>
+      </div>
+
+      <div class="footer-point-map">
+        <h4 class="visually-hidden">точка nёrds</h4>
+        <figure class="gallery-point-map">
           <a href="#">
             <img
               src="https://via.placeholder.com/150x100"
-              width="1440"
-              height="416"
-              alt="карта"
+              width="231"
+              height="190"
+              alt="точка nёrds"
             />
           </a>
         </figure>
-
-        <div class="footer-container">
-          <div>nёrds design studio</div>
-          <p>191186, Cанкт-Петербург, ул. Б. Конюшенная д. 19/8</p>
-          <p>
-            <a class="contacts-text" href="tel+7(812)275-75-75"
-              >тел.+7(812) 275-75-75</a
-            >
-          </p>
-          <button class="button-contacts" type="button">Напишите нам</button>
-        </div>
-
-        <div class="footer-point-map">
-          <h4 class="visually-hidden">точка nёrds</h4>
-          <figure class="gallery-point-map">
-            <a href="#">
-              <img
-                src="https://via.placeholder.com/150x100"
-                width="231"
-                height="190"
-                alt="точка nёrds"
-              />
+      </div>
+      <section class="footer-socials">
+        <h4 class="visually-hidden">Социальные сети.</h4>
+        <ul>
+          <li>
+            <a class="social-button" href="#">
+              <span class="visually-hidden">Вконтакте</span>
             </a>
-          </figure>
-        </div>
-      </section>
-      <section class="footer-socials-discount">
-        <div class="footer-socials">
-          <h4>Социальные сети.</h4>
-          <ul>
-            <li>
-              <a class="socials-button" href="#">
-                <span class="visually-hidden">Вконтакте</span>
-                <svg width="#" height="#" viewBox="#">
-                  <path d="#" fill="#" />
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="socials-button" href="#">
-                <span class="visually-hidden">Фейсбук</span>
-                <svg width="#" height="#" viewBox="#">
-                  <path d="#" fill="#" />
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="socials-button" href="#">
-                <span class="visually-hidden">Инстаграм</span>
-                <svg width="#" height="#" viewBox="#">
-                  <path d="#" fill="#" />
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
+          </li>
+          <li>
+            <a class="social-button" href="#">
+              <span class="visually-hidden">Фейсбук</span>
+            </a>
+          </li>
+          <li>
+            <a class="social-button" href="#">
+              <span class="visually-hidden">Инстаграм</span>
+            </a>
+          </li>
+        </ul>
         <div class="footer-discount">
           <h4 class="visually-hidden">Скидки</h4>
           <h3>Давайте дружить, это выгодно!</h3>
@@ -312,7 +297,7 @@
       >
         <p>
           <label for="name"> Ваше имя: </label>
-          <input type="names" name="name" id="name" placeholder="Имя Фамилия" />
+          <input type="text" name="name" id="name" placeholder="Имя Фамилия" />
         </p>
         <p>
           <label for="mail"> Ваш email:</label>
@@ -329,11 +314,9 @@
 В свободной форме</textarea
           >
         </p>
-        <div class="button">
-          <input type="submit" value="Отправить" />
-        </div>
+        <button class="button-modal" type="submit">Отправить</button>
       </form>
-      <button class="modal-button-close" type="close-button">Закрыть</button>
+      <button class="modal-button-close" type="button">закрыть</button>
     </section>
     <p class="visually-hidden">
       Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a
