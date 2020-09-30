@@ -924,7 +924,7 @@ fieldset {
   text-transform: uppercase;
   background-color: var(--basic-light-grey);
   color: var(--basic-black);
-  /* border: medium none; */
+  border: medium none;
 }
 
 .parameters-list {
