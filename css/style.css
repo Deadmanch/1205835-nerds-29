@@ -849,9 +849,11 @@ img {
   opacity: 0.3;
   font-size: 0;
 }
+
 .modal-button-close:hover {
   opacity: 1;
 }
+
 .modal-button-close:before,
 .modal-button-close:after {
   position: absolute;
