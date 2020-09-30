@@ -80,6 +80,7 @@ img {
 
 .site-navigation {
   list-style: none;
+  display: inline-block;
 }
 
 .site-navigation a:not([href]) {
@@ -551,11 +552,22 @@ img {
 }
 
 .features-list {
+  list-style: none;
   font-size: 16px;
   line-height: 24px;
   text-align: left;
   background-color: var(--basic-light-grey);
   color: var(--basic-anthracite-grey);
+}
+
+.features-list li::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 2px;
+  left: 10px;
+  top: "#";
+  background-color: var(--basic-crimson);
 }
 
 .gallery-cooperation {
@@ -570,6 +582,10 @@ img {
   text-transform: uppercase;
   background-color: var(--basic-light-grey);
   color: var(--basic-black);
+}
+
+.cooperation-list {
+  list-style: none;
 }
 
 .cooperation-list span {
@@ -606,6 +622,7 @@ img {
   background-color: var(--basic-light-grey);
   background-position: center, 0 0;
   background-repeat: no-repeat, repeat;
+  font-size: 0;
 }
 
 .logo-company-item a:link {
@@ -622,6 +639,15 @@ img {
 .logo-company-item a:active {
   color: var(--basic-black);
   background-color: var(--basic-light-grey);
+  opacity: 0;
+}
+.logo-company-item img:link {
+  opacity: 0.2;
+}
+.logo-company-item img:hover {
+  opacity: 1;
+}
+.logo-company-item img:active {
   opacity: 0.1;
 }
 
@@ -677,8 +703,9 @@ img {
   text-align: center;
 }
 
-.footer-social ul {
+.footer-socials-list {
   list-style: none;
+  display: inline-flex;
 }
 
 /* Social button */
@@ -705,6 +732,40 @@ img {
 .social-button:active {
   color: var(--basic-white);
   background-color: var(--basic-strawberry-red);
+}
+
+.vk-icon {
+  display: block;
+  padding-top: 33px;
+  padding-bottom: 33px;
+  padding-left: 27px;
+  padding-right: 27.99px;
+}
+.vk-icon:active {
+  opacity: 0.3;
+}
+
+.fb-icon {
+  display: block;
+  padding-top: 31px;
+  padding-bottom: 28px;
+  padding-left: 35px;
+  padding-right: 34px;
+}
+
+.fb-icon:active {
+  opacity: 0.3;
+}
+
+.insta-icon {
+  display: block;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.insta-icon:active {
   opacity: 0.3;
 }
 
@@ -986,6 +1047,10 @@ fieldset {
 
 .site-card:hover .card-price-block {
   visibility: visible;
+}
+
+.card-price-navigation {
+  list-style: none;
 }
 
 .name-cite {
