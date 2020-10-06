@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
-
   <body class="page-body">
     <header class="main-header">
       <nav class="main-navigation">
@@ -22,8 +21,8 @@
             alt="Логотип «nёrds»"
           />
         </a>
-        <div class="main-navigation-wrapper">
-          <div class="container">
+        <div class="main-header-bar">
+          <div class="main-navigation-wrapper">
             <ul class="site-navigation">
               <li><a class="restore" href="#">Студия</a></li>
               <li><a class="restore" href="#">Клиенты</a></li>
@@ -43,7 +42,7 @@
         </div>
       </nav>
     </header>
-    <main class="center">
+    <main class="container">
       <h4 class="visually-hidden">Магазин готовых шаблонов «nёrds»</h4>
       <div class="index-columns">
         <section class="info">
@@ -72,7 +71,7 @@
         </section>
 
         <section class="slider">
-          <h4 class="title">Изображения товаров</h4>
+          <h4 class="visually-hidden">Изображения товаров</h4>
           <ul class="slider-list">
             <li class="slide-one">
               <a href="#">
@@ -84,7 +83,7 @@
                 />
               </a>
             </li>
-            <li class="slide-two">
+            <li class="slide-two visually-hidden">
               <a href="#">
                 <img
                   src="/img/jpeg/nerds-index-slide-two.jpg"
@@ -94,7 +93,7 @@
                 />
               </a>
             </li>
-            <li class="slide-three">
+            <li class="slide-three visually-hidden">
               <a href="#">
                 <img
                   src="/img/jpeg/nerds-index-slide-three.jpg"
@@ -115,10 +114,6 @@
           <h4 class="visually-hidden">Список работ</h4>
           <ul class="works-list">
             <li class="works-item">
-              <h2>веб-сайты</h2>
-              <p>
-                Мир никогда не будет прежним после того как увидит ваш сайт!
-              </p>
               <figure class="gallery-works">
                 <a href="#">
                   <img
@@ -129,11 +124,14 @@
                   />
                 </a>
               </figure>
+              <h2>веб-сайты</h2>
+              <p>
+                Мир никогда не будет прежним после того как увидит ваш сайт!
+              </p>
+
               <a class="buy-one" href="#">Заказать</a>
             </li>
             <li class="works-item">
-              <h2>приложения</h2>
-              <p>Покорите топ-10 приложений в AppStore и Google Play</p>
               <figure class="gallery-works">
                 <a href="#">
                   <img
@@ -144,11 +142,11 @@
                   />
                 </a>
               </figure>
+              <h2>приложения</h2>
+              <p>Покорите топ-10 приложений в AppStore и Google Play</p>
               <a class="buy-two" href="#">Заказать</a>
             </li>
             <li class="works-item">
-              <h2>презентации</h2>
-              <p>Вы даже не подозреваете насколько вы изумительны!</p>
               <figure class="gallery-works">
                 <a href="#">
                   <img
@@ -159,6 +157,8 @@
                   />
                 </a>
               </figure>
+              <h2>презентации</h2>
+              <p>Вы даже не подозреваете насколько вы изумительны!</p>
               <a class="buy-three" href="#">Заказать</a>
             </li>
           </ul>
@@ -194,7 +194,7 @@
           <h3 class="subtitle-one">С 2004 года любим точность во всем:</h3>
           <ul class="cooperation-list">
             <li>
-              <span>146 <sup>%</sup></span>
+              <span>146<sup>%</sup></span>
               <p>Уровень самоотдачи</p>
             </li>
             <li>
@@ -216,7 +216,7 @@
               <a href="https://htmlacademy.ru/intensive/htmlcss">
                 Логотип Html Аcademy
                 <img
-                  src="img/logo html academ (1).svg"
+                  src="img/logo-html-academiya.svg"
                   alt="Логотип сайта Html Аcademy"
                   width="199"
                   height="67.82"
@@ -263,40 +263,41 @@
 
     <footer class="page-footer main-footer">
       <h4 class="visually-hidden">Контакты</h4>
-
-      <figure class="gallery-footer-map">
-        <a href="#">
-          <img
-            src="/img/jpeg/map.jpg"
-            width="1440"
-            height="416"
-            alt="карта местности"
-          />
-        </a>
-      </figure>
-      <div class="footer-container">
-        <div>nёrds design studio</div>
-        <p>191186, Cанкт-Петербург, ул. Б. Конюшенная д. 19/8</p>
-        <p>
-          <a class="contacts-text" href="tel+7(812)275-75-75"
-            >тел.+7(812) 275-75-75</a
-          >
-        </p>
-        <button class="button-contacts" type="button">Напишите нам</button>
-      </div>
-
-      <div class="footer-point-map">
-        <h4 class="visually-hidden">точка nёrds</h4>
-        <figure class="gallery-point-map">
+      <div class="index-footer">
+        <figure class="gallery-footer-map">
           <a href="#">
             <img
-              src="/img/jpeg/map-marker.jpg"
-              width="231"
-              height="190"
-              alt="точка nёrds на карте местности"
+              src="/img/jpeg/map.jpg"
+              width="1440"
+              height="416"
+              alt="карта местности"
             />
           </a>
         </figure>
+        <div class="footer-container">
+          <div>nёrds design studio</div>
+          <p>191186, Cанкт-Петербург, ул. Б. Конюшенная д. 19/8</p>
+          <p>
+            <a class="contacts-text" href="tel+7(812)275-75-75"
+              >тел.+7(812) 275-75-75</a
+            >
+          </p>
+          <button class="button-contacts" type="button">Напишите нам</button>
+        </div>
+
+        <div class="footer-point-map">
+          <h4 class="visually-hidden">точка nёrds</h4>
+          <figure class="gallery-point-map">
+            <a href="#">
+              <img
+                src="/img/svg/map-marker.svg"
+                width="231"
+                height="190"
+                alt="точка nёrds на карте местности"
+              />
+            </a>
+          </figure>
+        </div>
       </div>
       <section class="footer-socials">
         <h4 class="visually-hidden">Социальные сети.</h4>
@@ -306,7 +307,7 @@
               <span class="visually-hidden">Вконтакте</span>
               <img
                 class="vk-icon"
-                src="/img/svg/vk-icon (1).svg"
+                src="/img/svg/vk-icon.svg"
                 alt="cоциальный занчок Вконтакте"
                 width="26.01"
                 height="15"
@@ -318,7 +319,7 @@
               <span class="visually-hidden">Фейсбук</span>
               <img
                 class="fb-icon"
-                src="/img/svg/fb-icon (1).svg"
+                src="/img/svg/fb-icon.svg"
                 alt="cоциальный занчок Фейсбук"
                 width="12"
                 height="22"
@@ -330,7 +331,7 @@
               <span class="visually-hidden">Инстаграм</span>
               <img
                 class="insta-icon"
-                src="/img/svg/insta-icon (1).svg"
+                src="/img/svg/insta-icon.svg"
                 alt="cоциальный занчок Инстаграм"
                 width="21"
                 height="21"
