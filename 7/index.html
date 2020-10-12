@@ -43,7 +43,7 @@
         </div>
       </nav>
     </header>
-    <main class="container">
+    <main class="page-body container">
       <h4 class="visually-hidden">Магазин готовых шаблонов «nёrds»</h4>
       <div class="index-columns">
         <section class="info">
@@ -105,9 +105,11 @@
               </a>
             </li>
           </ul>
+          <div class="sliders-button">
           <button class="slider-button" type="button">#</button>
           <button class="slider-button" type="button">#</button>
           <button class="slider-button" type="button">#</button>
+          </div>
         </section>
       </div>
       <div class="index-work">
@@ -350,11 +352,8 @@
 
     <section class="modal-contact">
       <h2>Напишите нам</h2>
-      <form
-        class="login-form"
-        action="https://echo.htmlacademy.ru"
-        method="post"
-      >
+      <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="modal-contact-row">
         <p>
           <label for="name"> Ваше имя: </label>
           <input type="text" name="name" id="name" placeholder="Имя Фамилия" />
@@ -368,6 +367,7 @@
             placeholder="email@example.com"
           />
         </p>
+      </div>
         <p>
           <label for="message">Текст письма:</label>
           <textarea name="message" id="message-field" rows="10">
@@ -376,7 +376,7 @@
         </p>
         <button class="button-modal" type="submit">Отправить</button>
       </form>
-      <button class="modal-button-close" type="button">закрыть</button>
+      <button class="modal-button-close" type="button"><span class="visually-hidden">Закрыть</span></button>
     </section>
     <p class="visually-hidden">
       Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a
