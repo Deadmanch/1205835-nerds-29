@@ -30,13 +30,14 @@
               <li><a class="restore" href="#">Контакты</a></li>
             </ul>
             <div class="cart-navigation">
+              <div>
               <img
                 src="img/svg/cart-icon.svg"
                 alt="корзина"
                 width="15"
                 height="15"
-              />
-              <a class="restore" href="#">Корзина</a>
+              /></div>
+              <a class="restore-cart" href="#">Корзина</a>
             </div>
         </div>
       </nav>
@@ -139,7 +140,9 @@
       </section>
       <section class="filter-sort">
         <h4 class="visually-hidden">Фильтор подбора</h4>
+        <div class="sort">
         <h3>Сортировать:</h3>
+        </div>
         <ul class="sort-list">
           <li><a class="active" href="#">По цене</a></li>
           <li><a href="#">По типу</a></li>
@@ -279,12 +282,15 @@
           <a class="button-price" type="button" href="#">9 900 ₽</a>
         </div>
       </article>
+
+      <div>
         <ul class="card-price-navigation">
           <li><a>1</a></li>
           <li><a href="#">2</a></li>
           <li><a href="#">3</a></li>
           <li><a href="#">Сдедующая</a></li>
         </ul>
+      </div>
       </div>
     </main>
 
@@ -376,24 +382,17 @@
 
     <section class="modal-contact">
       <h2>Напишите нам</h2>
-      <form
-        class="login-form"
-        action="https://echo.htmlacademy.ru"
-        method="post"
-      >
+      <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="modal-contact-row">
         <p>
-          <label for="your-name"> Ваше имя:</label>
-          <input
-            type="text"
-            name="name"
-            id="your-name"
-            placeholder="Имя Фамилия"
-          />
+          <label for="name"> Ваше имя: </label>
+          <input type="text" name="name" id="name" placeholder="Имя Фамилия" />
         </p>
         <p>
           <label for="mail"> Ваш email:</label>
           <input type="email" name="email" id="mail" placeholder="email@example.com"/>
         </p>
+      </div>
         <p>
           <label for="message">Текст письма:</label>
           <textarea name="message" id="message-field" rows="10">
@@ -402,7 +401,7 @@
         </p>
         <button class="button-modal" type="submit">Отправить</button>
       </form>
-      <button class="modal-button-close" type="button"></button>
+      <button class="modal-button-close" type="button"><span class="visually-hidden">Закрыть</span></button>
     </section>
     <p class="visually-hidden">
       Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a
