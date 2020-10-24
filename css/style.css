@@ -303,9 +303,11 @@ img {
 }
 
 .restore:link,
-.restore:hover,
-.restore:active {
+.restore:hover {
   text-decoration: none;
+}
+.restore:active {
+  border: lawngreen;
 }
 .restore-cart {
   display: flex;
@@ -1103,6 +1105,10 @@ img {
 }
 /* Modal */
 
+.modals {
+  /* display: none; */
+}
+
 .modal {
   color: var(--basic-black);
   background-color: var(--basic-white);
@@ -1113,17 +1119,21 @@ img {
 }
 
 .modal-contact {
+  /* position: fixed; */
+  top: 156px;
+  left: 50%;
+  z-index: 3;
   color: var(--basic-black);
   background-color: var(--basic-white);
+  -webkit-box-shadow: 0 20px 40px 0 rgba(0, 1, 1, 0.75);
+  box-shadow: 0 20px 40px 0 rgba(0, 1, 1, 0.75);
   background-position: 0px 0px;
   background-repeat: no-repeat;
   outline: rgb(212, 209, 0) solid 5px;
   outline-offset: -5px;
   /* position: absolute;  */
-  left: 240px;
-  top: 1706px;
-  width: 960px;
-  height: 590px;
+  width: 760px;
+  padding: 68px 100px 85px 100px;
 }
 
 .modal-contact h2 {
@@ -1143,114 +1153,87 @@ img {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
 }
-
-/* Login form */
-
-.login-form input[type="name"],
-.login-form input[type="email"] {
-  font: inherit;
-  color: var(--basic-gainsborough);
-  background-color: transparent;
-  border: 2px solid var(--basic-gainsborough);
-  border-radius: 3px;
+.modal-contacts-row p {
+  width: 360px;
 }
-
-.login-form input[type="name"]:link {
-  font: inherit;
-  color: var(--basic-gainsborough);
-  border: 2px solid var(--basic-gainsborough);
-  background-color: transparent;
-  border-radius: 3px;
-}
-
-.login-form input[type="name"]:hover {
-  font: inherit;
-  color: var(--basic-dark-bluish-black);
-  border: 2px solid var(--basic-light-grey-two);
-  background-color: transparent;
-  opacity: 0.5;
-  border-radius: 3px;
-}
-
-.login-form input[type="name"]:focus {
-  font: inherit;
-  color: var(--basic-dark-bluish-black);
-  border: 2px solid var(--basic-black);
-  background-color: transparent;
-  border-radius: 3px;
-}
-
-.login-form input[type="name"]:invalid {
-  font: inherit;
-  color: var(--basic-сarmine-pink);
-  border: 2px solid var(--basic-сarmine-pink);
-  background-color: transparent;
-  border-radius: 3px;
-}
-
-.login-form textarea {
-  font: inherit;
-  color: var(--basic-black);
-  background-color: transparent;
-  border: 2px solid var(--basic-gainsborough);
-  border-radius: 3px;
-}
-
-.login-form input:focus {
-  border-color: var(--special);
-}
-
 .modal-button-close {
+  width: 27px;
+  height: 27px;
+  padding: 0;
   /* position: absolute; */
+  top: 77px;
+  right: 87px;
   background: none;
   border: none;
   cursor: pointer;
-  right: 87px;
-  top: 77px;
-  width: 27px;
-  height: 27px;
   opacity: 0.3;
-  font-size: 0;
 }
 
 .modal-button-close:hover {
   opacity: 1;
 }
 
-.modal-button-close:before,
-.modal-button-close:after {
-  position: absolute;
-  left: 15px;
-  content: " ";
-  height: 33px;
-  width: 2px;
-  background-color: #333;
+.modal-button-close:active {
+  opacity: 0.1;
 }
-.modal-button-close:before {
+
+.modal-button-close::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0;
+
+  width: 27px;
+  height: 5px;
+
+  background-color: #fb565a;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-.modal-button-close:after {
+
+.modal-button-close::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0;
+
+  width: 27px;
+  height: 5px;
+
+  background-color: #fb565a;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
 
-.modal-button-close:link {
-  background-color: var(--basic-crimson);
-  width: 21px;
-  height: 21px;
-  opacity: 0.3;
+/* Login form */
+.login-form {
+  position: relative;
 }
 
-.modal-button-close:hover {
-  background-color: var(--basic-crimson);
-  width: 21px;
-  height: 21px;
+.login-form label {
+  line-height: 18px;
+  color: var(--basic-black);
+  font-weight: bold;
 }
 
-.modal-button-close:active {
-  background-color: var(--basic-crimson);
-  width: 21px;
-  height: 21px;
-  opacity: 0.1;
+.login-form textarea,
+.login-form input {
+  font: inherit;
+  color: var(--basic-black);
+  padding: 13px;
+  width: 100%;
+  background-color: transparent;
+  line-height: 18px;
+  border: 2px solid var(--basic-gainsborough);
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.login-form input:focus {
+  border-color: var(--special);
 }
 
 /* Catalog */
