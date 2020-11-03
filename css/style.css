@@ -411,7 +411,7 @@ img {
   text-transform: none;
   color: var(--basic-black);
   padding-top: 78px;
-  padding-right: 60px;
+  /* padding-right: 60px; */
   padding-bottom: 12px;
   margin: 0;
 }
@@ -1446,6 +1446,7 @@ img {
 
 .range-controls .bar {
   width: 70%;
+  margin-left: 1%;
   height: 2px;
   background: #00ca74;
 }
@@ -1463,11 +1464,11 @@ img {
   cursor: pointer;
 }
 .range-controls .toggle-min {
-  left: 18px;
+  left: 1%;
 }
 
 .range-controls .toggle-max {
-  left: 160px;
+  left: 60%;
 }
 .price-controls label {
   text-transform: uppercase;
