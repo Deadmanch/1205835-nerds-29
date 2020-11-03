@@ -13,30 +13,16 @@
   <body class="page-body">
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="main-header-logo" href="index.html">
-          <img
-            src="/img/svg/nerds-logo.svg"
-            width="160"
-            height="65"
-            alt="Логотип «nёrds»"
-          />
-        </a>
+        <a class="main-header-logo" href="index.html"><span class="visually-hidden">логотип</span></a>
         <div class="main-header-bar">
           <div class="main-navigation-wrapper">
             <ul class="site-navigation">
-              <li><a class="restore" href="#">Студия</a></li>
-              <li><a class="restore" href="#">Клиенты</a></li>
-              <li><a class="restore" href="catalog.html">Магазин</a></li>
-              <li><a class="restore" href="#">Контакты</a></li>
+              <li><a href="#">Студия</a></li>
+              <li><a href="#">Клиенты</a></li>
+              <li class="active"><a href="#">Магазин</a></li>
+              <li><a href="#">Контакты</a></li>
             </ul>
             <div class="cart-navigation">
-              <div>
-              <img
-                src="img/svg/cart-icon.svg"
-                alt="корзина"
-                width="15"
-                height="15"
-              /></div>
               <a class="restore-cart" href="#">Корзина</a>
             </div>
         </div>
@@ -48,90 +34,68 @@
     <main class="page-catalog container">
       <section class="filters">
         <h4 class="visually-hidden">Фильтор особенностей</h4>
-        <form action="https://echo.htmlacademy.ru/courses" method="post">
-          <fieldset class="parameters">
+        <form action="https://echo.htmlacademy.ru/courses" method="GET">
+          <fieldset class="filter-item">
             <legend>Стоимость:</legend>
-            <div>
-              <input type="range" min="1" max="15000" />
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="toggle toggle-min" tabindex="0"></div>
+                <div class="toggle toggle-max" tabindex="0"></div>
+              </div>
+              <div class="price-controls">
+                <label class="min-price">
+                  от <input type="number" name="min-price" value="0">
+                </label>
+                <label class="max-price">
+                  до <input type="number" name="max-price" value="15000">
+                </label>
+              </div>
             </div>
           </fieldset>
           <fieldset class="parameters">
             <legend>Сетка:</legend>
             <ul class="parameters-list">
               <li class="parameters-item">
-                <input
-                  type="radio"
-                  name="grid"
-                  id="adaptiv"
-                  value="adaptiv-grid"
-                  checked
-                />
+                <input class="filter-input visually-hidden filter-input-radio parameters-input" type="radio" name="grid" id="adaptiv" value="adaptiv-grid" checked disabled/>
                 <label for="adaptiv">Адаптивная</label>
               </li>
               <li class="parameters-item">
-                <input type="radio" name="grid" id="fixed" value="fixed-grid" />
+                <input class="filter-input visually-hidden filter-input-radio parameters-input" type="radio" name="grid" id="fixed" value="fixed-grid" />
                 <label for="fixed">Фиксированная</label>
               </li>
               <li class="parameters-item">
-                <input
-                  type="radio"
-                  name="grid"
-                  id="rubber"
-                  value="rubber-grid"
-                />
+                <input class="filter-input visually-hidden filter-input-radio parameters-input" type="radio" name="grid" id="rubber" value="rubber-grid"/>
                 <label for="rubber">Резиновая</label>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="parameters">
+          <fieldset class="parameters-one">
             <legend>Особенности:</legend>
             <ul class="parameters-list">
               <li class="parameters-item">
-                <input
-                  type="checkbox"
-                  name="features"
-                  id="slider"
-                  value="slider-features"
-                  checked
-                />
+                <input class="filter-input visually-hidden filter-input-checkbox parameters-input" type="checkbox" name="features" id="slider" value="slider-features" checked disabled/>
                 <label for="slider">Слайдер</label>
               </li>
               <li class="parameters-item">
-                <input
-                  type="checkbox"
-                  name="features"
-                  id="block"
-                  value="block-features"
-                />
+                <input class="filter-input visually-hidden filter-input-checkbox parameters-input" type="checkbox" name="features" id="block" value="block-features"/>
                 <label for="block">Блок преимуществ</label>
               </li>
               <li class="parameters-item">
-                <input
-                  type="checkbox"
-                  name="features"
-                  id="news"
-                  value="news-features"
-                  checked
+                <input class="filter-input visually-hidden filter-input-checkbox parameters-input" type="checkbox" name="features" id="news" value="news-features" checked
                 />
                 <label for="news">Новости</label>
               </li>
               <li class="parameters-item">
-                <input
-                  type="checkbox"
-                  name="features"
-                  id="gallery"
-                  value="gallery-features"
-                />
+                <input class="filter-input visually-hidden filter-input-checkbox parameters-input" type="checkbox" name="features" id="gallery" value="gallery-features"/>
                 <label for="gallery">Галерея</label>
               </li>
               <li class="parameters-item">
-                <input
-                  type="checkbox"
-                  name="features"
-                  id="basket"
-                  value="basket-features"
+                <input class="filter-input visually-hidden filter-input-checkbox parameters-input" type="checkbox" name="features" id="basket" value="basket-features"
                 />
-                <label for="basket">Корзина</label>
+                <label  for="basket">Корзина</label>
               </li>
             </ul>
           </fieldset>
@@ -143,15 +107,17 @@
         <div class="sort">
         <h3>Сортировать:</h3>
         </div>
+        <div class="sort-list">
         <ul class="sort-list">
           <li><a class="active" href="#">По цене</a></li>
           <li><a href="#">По типу</a></li>
           <li><a href="#">По названию</a></li>
         </ul>
         <ul class="sort-list">
-          <li><a class="active" href="#">вверх</a></li>
-          <li><a href="#">вниз</a></li>
+          <li class="sort-item-down"><a class="active" href="#"><span class="visually-hidden">Стрелка вниз</span></a></li>
+          <li class="sort-item-up"><a  href="#"><span class="visually-hidden">Стрелка вверх</span></a></li>
         </ul>
+      </div>
       </section>
       <div class="cards-content">
       <article class="site-card">
@@ -284,11 +250,11 @@
       </article>
 
       <div>
-        <ul class="card-price-navigation">
-          <li><a>1</a></li>
-          <li><a href="#">2</a></li>
-          <li><a href="#">3</a></li>
-          <li><a href="#">Сдедующая</a></li>
+        <ul class="pagination-list">
+          <li class="pagination-item"><a class="active" href="#">1</a></li>
+          <li class="pagination-item"><a href="#">2</a></li>
+          <li class="pagination-item"><a href="#">3</a></li>
+          <li class="pagination-item"><a href="#">Сдедующая</a></li>
         </ul>
       </div>
       </div>
@@ -406,8 +372,7 @@
     <p class="visually-hidden">
       Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a
         href="https://htmlacademy.ru/intensive/htmlcss"
-        >HTML и CSS, уровень 1</a
-      >».
+        >HTML и CSS, уровень 1</a>».
     </p>
   </body>
 </html>

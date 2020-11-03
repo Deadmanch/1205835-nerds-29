@@ -13,32 +13,18 @@
   <body class="page-body">
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="main-header-logo">
-          <img
-            src="/img/svg/nerds-logo.svg"
-            width="159.87"
-            height="65.02"
-            alt="Логотип «nёrds»"
-          />
-        </a>
+        <a class="main-header-logo"><span class="visually-hidden">логотип</span></a>
         <div class="main-header-bar">
           <div class="main-navigation-wrapper">
             <ul class="site-navigation">
-              <li><a class="restore" href="#">Студия</a></li>
-              <li><a class="restore" href="#">Клиенты</a></li>
-              <li><a class="restore" href="catalog.html">Магазин</a></li>
-              <li><a class="restore" href="#">Контакты</a></li>
+              <li><a href="#">Студия</a></li>
+              <li><a href="#">Клиенты</a></li>
+              <li><a href="catalog.html">Магазин</a></li>
+              <li></li><a href="#">Контакты</a></li>
 
             </ul>
             <div class="cart-navigation">
-              <div>
-                <img
-                src="img/svg/cart-icon.svg"
-                alt="корзина"
-                width="15"
-                height="15"
-              /></div>
-              <a class="restore-cart" href="#">Корзина</a>
+              <a class="restore-cart" href="cart.html">Корзина</a>
             </div>
           </div>
         </div>
@@ -46,73 +32,47 @@
     </header>
     <main class="page-body container">
       <h4 class="visually-hidden">Магазин готовых шаблонов «nёrds»</h4>
-      <div class="index-columns">
-        <section class="info">
+      <section class="index-columns">
+        <div class="info">
+          <div class="index-description slide ">
           <h3>Долго, дорого, скрупулезно.</h3>
           <p>
-            Математически выверенный дизайн для вашего сайта или мобильного
+            Математически выверенный дизайн <br> для вашего сайта или мобильного
             приложения.
           </p>
           <a class="button" type="button">Узнать больше</a>
-        </section>
-        <section class="info visually-hidden">
+          </div>
+        </div>
+
+        <div class="info">
+          <div class="index-description slide ">
           <h3>Любим математику как никто другой</h3>
           <p>
             Никакого креатива, только математические формулы для расчета
             идеальных пропорций
           </p>
           <a class="button" type="button">Узнать больше</a>
-        </section>
-        <section class="info visually-hidden">
+          </div>
+        </div>
+
+        <div class="info">
+         <div class="index-description slide slide-current">
           <h3>Только ночь, только хардкор</h3>
           <p>
             Работать днем,как все? Мы против этого. Ближе к полуночи работа
             только начинается.
           </p>
           <a class="button" type="button" href="#">Узнать больше</a>
-        </section>
-
-        <section class="slider">
-          <h4 class="visually-hidden">Изображения товаров</h4>
-          <ul class="slider-list">
-            <li class="slide-one">
-              <a href="#">
-                <img
-                  src="/img/svg/nerds-index-slide1.svg"
-                  width="760"
-                  height="431"
-                  alt="картика телефонов"
-                />
-              </a>
-            </li>
-            <li class="slide-two visually-hidden">
-              <a href="#">
-                <img
-                  src="/img/svg/nerds-index-slide2.svg"
-                  width="760"
-                  height="431"
-                  alt="картинка мониторов"
-                />
-              </a>
-            </li>
-            <li class="slide-three visually-hidden">
-              <a href="#">
-                <img
-                  src="/img/svg/nerds-index-slide3.svg"
-                  width="760"
-                  height="431"
-                  alt="картирка планшетов"
-                />
-              </a>
-            </li>
-          </ul>
-          <div class="sliders-button">
-          <button class="slider-button" type="button">#</button>
-          <button class="slider-button" type="button">#</button>
-          <button class="slider-button" type="button">#</button>
           </div>
+        </div>
+
+          <div class="slider-button">
+          <button  type="button" class="current" aria-label="Первый слайд"></button>
+          <button  type="button"  aria-label="Второй слайд"></button>
+          <button  type="button"  aria-label="Третий слайд"></button>
+          </div>
+
         </section>
-      </div>
       <div class="index-work">
         <section class="works">
           <h4 class="visually-hidden">Список работ</h4>
@@ -128,7 +88,7 @@
                   />
                 </a>
               </figure>
-              <h2>веб-сайты</h2>
+              <h2>веб&#8209;сайты</h2>
               <p>
                 Мир никогда не будет прежним после того как увидит ваш сайт!
               </p>
@@ -147,7 +107,7 @@
                 </a>
               </figure>
               <h2>приложения</h2>
-              <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+              <p>Покорите топ&#8209;10 приложений в AppStore и Google Play</p>
               <a class="buy-two" href="#">Заказать</a>
             </li>
             <li class="works-item">
@@ -169,9 +129,10 @@
         </section>
       </div>
       <div class="index-features">
+        <div class="cont">
         <section class="features">
           <h4 class="visually-hidden">Преимущества</h4>
-          <h1>Мы-маленькая, но гордая, дизайн-студия из Краснодара.</h1>
+          <h1>Мы-маленькая, но гордая дизайн-студия из Краснодара.</h1>
           <p>
             Исповедуем принципы минимализма и чистоты. Ставим математический
             расчет превыше креатива. Работаем не покладая рук, как роботы.
@@ -211,6 +172,7 @@
             </li>
           </ul>
         </section>
+       </div>
       </div>
       <div class="index-company">
         <section class="logo-company">
