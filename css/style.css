@@ -73,7 +73,7 @@ img {
 
 .page {
   height: 100%;
-  width: 1440px;
+  /* width: 1440px; */
   margin: 0 auto;
 }
 
@@ -146,6 +146,8 @@ img {
   line-height: 30px;
   color: var(--basic-black);
   background-color: transparent;
+  width: 1440px;
+  margin: 0 auto;
 }
 
 .main-header-bar {
@@ -339,6 +341,9 @@ img {
 }
 
 /* Index columns */
+.pol {
+  width: 100%;
+}
 
 .index-columns {
   /* color: var(--basic-black);
@@ -354,11 +359,18 @@ img {
   position: relative;
   min-height: 431px;
   background-color: var(--basic-smoky-white);
+  /* width: 1440px; */
+}
+
+.info{
+  position: absolute;
+width: 1440px;
+margin: 0 auto;
 }
 
 .index-columns .info {
-  position: absolute;
-  width: 100%;
+  /* position: absolute; */
+  /* width: 100%; */
   /* padding-bottom: 80px; */
   background-repeat: no-repeat;
   background-position: 78%;
