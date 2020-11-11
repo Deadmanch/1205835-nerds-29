@@ -34,7 +34,7 @@
     <main class="page-catalog container">
       <section class="filters">
         <h4 class="visually-hidden">Фильтор особенностей</h4>
-        <form action="https://echo.htmlacademy.ru/courses" method="GET" target="_blank">
+        <form action="https://echo.htmlacademy.ru/courses" method="get" target="_blank" action="https://echo.htmlacademy.ru/">
           <fieldset class="filter-item">
             <legend>Стоимость:</legend>
             <div class="range-filter">
@@ -59,15 +59,15 @@
             <legend>Сетка:</legend>
             <ul class="parameters-list">
               <li class="parameters-item">
-                <input class="filter-input visually-hidden filter-input-radio parameters-input" type="radio" name="grid" id="adaptiv" value="adaptiv-grid" checked disabled/>
+                <input class="filter-input visually-hidden filter-input-radio parameters-input" type="radio" name="grid" id="adaptiv" value="адаптивная" checked disabled/>
                 <label for="adaptiv">Адаптивная</label>
               </li>
               <li class="parameters-item">
-                <input class="filter-input visually-hidden filter-input-radio parameters-input" type="radio" name="grid" id="fixed" value="fixed-grid" />
+                <input class="filter-input visually-hidden filter-input-radio parameters-input" type="radio" name="grid" id="fixed" value="фиксированная" />
                 <label for="fixed">Фиксированная</label>
               </li>
               <li class="parameters-item">
-                <input class="filter-input visually-hidden filter-input-radio parameters-input" type="radio" name="grid" id="rubber" value="rubber-grid"/>
+                <input class="filter-input visually-hidden filter-input-radio parameters-input" type="radio" name="grid" id="rubber" value="Резиновая"/>
                 <label for="rubber">Резиновая</label>
               </li>
             </ul>
@@ -76,30 +76,30 @@
             <legend>Особенности:</legend>
             <ul class="parameters-list">
               <li class="parameters-item">
-                <input class="filter-input visually-hidden filter-input-checkbox parameters-input" type="checkbox" name="features" id="slider" value="slider-features" checked disabled/>
+                <input class="filter-input visually-hidden filter-input-checkbox parameters-input" type="checkbox" name="features" id="slider" value="слайдер" checked disabled/>
                 <label for="slider">Слайдер</label>
               </li>
               <li class="parameters-item">
-                <input class="filter-input visually-hidden filter-input-checkbox parameters-input" type="checkbox" name="features" id="block" value="block-features"/>
+                <input class="filter-input visually-hidden filter-input-checkbox parameters-input" type="checkbox" name="features" id="block" value="Блок преимуществ"/>
                 <label for="block">Блок преимуществ</label>
               </li>
               <li class="parameters-item">
-                <input class="filter-input visually-hidden filter-input-checkbox parameters-input" type="checkbox" name="features" id="news" value="news-features" checked
+                <input class="filter-input visually-hidden filter-input-checkbox parameters-input" type="checkbox" name="features" id="news" value="новости" checked
                 />
                 <label for="news">Новости</label>
               </li>
               <li class="parameters-item">
-                <input class="filter-input visually-hidden filter-input-checkbox parameters-input" type="checkbox" name="features" id="gallery" value="gallery-features"/>
+                <input class="filter-input visually-hidden filter-input-checkbox parameters-input" type="checkbox" name="features" id="gallery" value="Галерея"/>
                 <label for="gallery">Галерея</label>
               </li>
               <li class="parameters-item">
-                <input class="filter-input visually-hidden filter-input-checkbox parameters-input" type="checkbox" name="features" id="basket" value="basket-features"
+                <input class="filter-input visually-hidden filter-input-checkbox parameters-input" type="checkbox" name="features" id="basket" value="корзина"
                 />
                 <label  for="basket">Корзина</label>
               </li>
             </ul>
           </fieldset>
-          <a class="button-show" type="button" href="#">Показать</a>
+          <button class="button-show" type="submit" href="#">Показать</button>
         </form>
       </section>
       <section class="filter-sort">
@@ -140,7 +140,7 @@
         </a>
         <div class="card-price-block-active">
           <a class="name-cite" href="#">Sedona</a>
-          <p>Информационный сайт <br> для туристов</p>
+          <p>Информационный сайт <br> для туристов </p>
           <a class="button-price" type="button" href="#" area-label="Добавить информационный сайт Sedona для туристов в корзину">9 900 ₽</a>
         </div>
       </article>
