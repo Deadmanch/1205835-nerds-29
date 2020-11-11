@@ -8,7 +8,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,400&display=swap"
     />
     <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body class="page-body">
     <header class="main-header">
@@ -34,7 +34,7 @@
     <main class="page-catalog container">
       <section class="filters">
         <h4 class="visually-hidden">Фильтор особенностей</h4>
-        <form action="https://echo.htmlacademy.ru/courses" method="GET">
+        <form action="https://echo.htmlacademy.ru/courses" method="get" target="_blank" action="https://echo.htmlacademy.ru/">
           <fieldset class="filter-item">
             <legend>Стоимость:</legend>
             <div class="range-filter">
@@ -59,15 +59,15 @@
             <legend>Сетка:</legend>
             <ul class="parameters-list">
               <li class="parameters-item">
-                <input class="filter-input visually-hidden filter-input-radio parameters-input" type="radio" name="grid" id="adaptiv" value="adaptiv-grid" checked disabled/>
+                <input class="filter-input visually-hidden filter-input-radio parameters-input" type="radio" name="grid" id="adaptiv" value="адаптивная" checked disabled/>
                 <label for="adaptiv">Адаптивная</label>
               </li>
               <li class="parameters-item">
-                <input class="filter-input visually-hidden filter-input-radio parameters-input" type="radio" name="grid" id="fixed" value="fixed-grid" />
+                <input class="filter-input visually-hidden filter-input-radio parameters-input" type="radio" name="grid" id="fixed" value="фиксированная" />
                 <label for="fixed">Фиксированная</label>
               </li>
               <li class="parameters-item">
-                <input class="filter-input visually-hidden filter-input-radio parameters-input" type="radio" name="grid" id="rubber" value="rubber-grid"/>
+                <input class="filter-input visually-hidden filter-input-radio parameters-input" type="radio" name="grid" id="rubber" value="Резиновая"/>
                 <label for="rubber">Резиновая</label>
               </li>
             </ul>
@@ -76,30 +76,30 @@
             <legend>Особенности:</legend>
             <ul class="parameters-list">
               <li class="parameters-item">
-                <input class="filter-input visually-hidden filter-input-checkbox parameters-input" type="checkbox" name="features" id="slider" value="slider-features" checked disabled/>
+                <input class="filter-input visually-hidden filter-input-checkbox parameters-input" type="checkbox" name="features" id="slider" value="слайдер" checked disabled/>
                 <label for="slider">Слайдер</label>
               </li>
               <li class="parameters-item">
-                <input class="filter-input visually-hidden filter-input-checkbox parameters-input" type="checkbox" name="features" id="block" value="block-features"/>
+                <input class="filter-input visually-hidden filter-input-checkbox parameters-input" type="checkbox" name="features" id="block" value="Блок преимуществ"/>
                 <label for="block">Блок преимуществ</label>
               </li>
               <li class="parameters-item">
-                <input class="filter-input visually-hidden filter-input-checkbox parameters-input" type="checkbox" name="features" id="news" value="news-features" checked
+                <input class="filter-input visually-hidden filter-input-checkbox parameters-input" type="checkbox" name="features" id="news" value="новости" checked
                 />
                 <label for="news">Новости</label>
               </li>
               <li class="parameters-item">
-                <input class="filter-input visually-hidden filter-input-checkbox parameters-input" type="checkbox" name="features" id="gallery" value="gallery-features"/>
+                <input class="filter-input visually-hidden filter-input-checkbox parameters-input" type="checkbox" name="features" id="gallery" value="Галерея"/>
                 <label for="gallery">Галерея</label>
               </li>
               <li class="parameters-item">
-                <input class="filter-input visually-hidden filter-input-checkbox parameters-input" type="checkbox" name="features" id="basket" value="basket-features"
+                <input class="filter-input visually-hidden filter-input-checkbox parameters-input" type="checkbox" name="features" id="basket" value="корзина"
                 />
                 <label  for="basket">Корзина</label>
               </li>
             </ul>
           </fieldset>
-          <a class="button-show" type="button" href="#">Показать</a>
+          <button class="button-show" type="submit" href="#">Показать</button>
         </form>
       </section>
       <section class="filter-sort">
@@ -140,8 +140,8 @@
         </a>
         <div class="card-price-block-active">
           <a class="name-cite" href="#">Sedona</a>
-          <p>Информационный сайт <br> для туристов</p>
-          <a class="button-price" type="button" href="#">9 900 ₽</a>
+          <p>Информационный сайт <br> для туристов </p>
+          <a class="button-price" type="button" href="#" area-label="Добавить информационный сайт Sedona для туристов в корзину">9 900 ₽</a>
         </div>
       </article>
       <article class="site-card">
@@ -164,7 +164,7 @@
         <div class="card-price-block">
           <a class="name-cite" href="#">Pink app</a>
           <p>Продуктовый лендинг приложения для IOS и Andrioid</p>
-          <a class="button-price" type="button" href="#">9 900 ₽</a>
+          <a class="button-price" type="button" href="#"  area-label="Добавить сайт Pink app в корзину">9 900 ₽</a>
         </div>
       </article>
       <article class="site-card">
@@ -185,7 +185,7 @@
         <div class="card-price-block">
           <a class="name-cite" href="#">Barbershop</a>
           <p>Сайт салона красоты. <br> Для мужчин, да.</p>
-          <a class="button-price" type="button" href="#">9 900 ₽</a>
+          <a class="button-price" type="button" href="#" area-label="Добавить сайт Барбершоп в корзину">9 900 ₽</a>
         </div>
       </article>
       <article class="site-card">
@@ -206,7 +206,7 @@
         <div class="card-price-block">
           <a class="name-cite" href="#">Mishka</a>
           <p>Интернет-магазин вязаных игрушек</p>
-          <a class="button-price" type="button" href="#">9 900 ₽</a>
+          <a class="button-price" type="button" href="#" area-label="Добавить сайт Mishka в корзину">9 900 ₽</a>
         </div>
       </article>
       <article class="site-card">
@@ -227,7 +227,7 @@
         <div class="card-price-block">
           <a class="name-cite" href="#">a plus</a>
           <p>Лендиинг курсов повышения квалификации</p>
-          <a class="button-price" type="button" href="#">9 900 ₽</a>
+          <a class="button-price" type="button" href="#" area-label="Добавить сайт A Plus в корзину">9 900 ₽</a>
         </div>
       </article>
       <article class="site-card">
@@ -248,7 +248,7 @@
         <div class="card-price-block">
           <a class="name-cite" href="#">кваст</a>
           <p>Промо-сайт производителя крафтого кваса</p>
-          <a class="button-price" type="button" href="#">9 900 ₽</a>
+          <a class="button-price" type="button" href="#" area-label="Добавить сайт кваст в корзину">9 900 ₽</a>
         </div>
       </article>
 
@@ -295,8 +295,7 @@
         <h4 class="visually-hidden">Социальные сети.</h4>
         <ul class="footer-socials-list">
           <li>
-            <a class="social-button" href="#">
-              <span class="visually-hidden">Вконтакте</span>
+            <a class="social-button" href="#" aria-label="Вконтакте">
               <img
                 class="vk-icon"
                 src="/img/svg/vk-icon.svg"
@@ -307,8 +306,7 @@
             </a>
           </li>
           <li>
-            <a class="social-button" href="#">
-              <span class="visually-hidden">Фейсбук</span>
+            <a class="social-button" href="#" aria-label="Фейсбук">
               <img
                 class="fb-icon"
                 src="/img/svg/fb-icon.svg"
@@ -319,8 +317,7 @@
             </a>
           </li>
           <li>
-            <a class="social-button" href="#">
-              <span class="visually-hidden">Инстаграм</span>
+            <a class="social-button" href="#" aria-label="Инстаграм">
               <img
                 class="insta-icon"
                 src="/img/svg/insta-icon.svg"
